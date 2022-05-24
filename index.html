@@ -9,25 +9,15 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
 
     <title>Frontend Mentor | Expenses chart component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
+
   <body>
-    <main class="flex">
+    <main class="flex-column">
       <div class="balance flex-row">
         <div class="stats">
           <h2>My Balance</h2>
@@ -40,34 +30,42 @@
       <div class="detailed flex-column">
         <h2 class="strong-text">Spending - Last 7 days</h2>
         <div class="chart flex-row">
-          <div class="bar" id="mon">
+          <div>
+            <div class="bar" id="mon"></div>
             <p>mon</p>
           </div>
-          <div class="bar" id="tue">
+          <div>
+            <div class="bar" id="tue"></div>
             <p>tue</p>
           </div>
-          <div class="bar" id="wed">
+          <div>
+            <div class="bar" id="wed"></div>
             <p>wed</p>
           </div>
-          <div class="bar" id="thu">
+          <div>
+            <div class="bar" id="thu"></div>
             <p>thu</p>
           </div>
-          <div class="bar" id="fri">
+          <div>
+            <div class="bar" id="fri"></div>
             <p>fri</p>
           </div>
-          <div class="bar" id="sat">
+          <div>
+            <div class="bar" id="sat"></div>
             <p>sat</p>
           </div>
-          <div class="bar" id="sun">
+          <div>
+            <div class="bar" id="sun"></div>
             <p>sun</p>
           </div>
         </div>
-        <div class="monthly flex-row">
-          <div class="monthly-total">
+        <div class="hr"></div>
+        <div class="flex-row">
+          <div>
             <p>Total this month</p>
-            <p class="strong-text">$478.33</p>
+            <p class="strong-text large-text">$478.33</p>
           </div>
-          <div class="monthly-change right-align">
+          <div class="right-align">
             <p class="strong-text">+2.4%</p>
             <p>from last month</p>
           </div>
@@ -79,7 +77,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/jwilhoit83">Jerod Wilhoit</a>.
+      >. Coded by <a href="https://github.com/jwilhoit83">jwilhoit83</a>.
     </div>
   </body>
 </html>
