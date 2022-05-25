@@ -68,7 +68,7 @@ main {
   border-radius: 0.75rem;
 }
 
-.stats > h2 {
+.stats > h1 {
   font-size: 1rem;
   font-weight: 400;
 }
