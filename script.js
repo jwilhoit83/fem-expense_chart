@@ -5,8 +5,8 @@ fetch("data.json")
 
     data.forEach((day) => {
       const dayOfWeek = document.getElementById(day.day);
-      dayOfWeek.style.height = `${(day.amount / max) * 7.5}rem`;
-      dayOfWeek.setAttribute("title", `$${day.amount}`);
+      dayOfWeek.style.height = `${(day.amount / max) * 10}rem`;
+      dayOfWeek.firstElementChild.innerText = `$${day.amount}`
       if (day.amount === max) {
         dayOfWeek.style.backgroundColor = "var(--clr-primary-100";
       }
